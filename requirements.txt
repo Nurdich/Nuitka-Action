@@ -10,3 +10,5 @@ wheel==0.38.4
     # via -r requirements.in
 zstandard==0.20.0
     # via -r requirements.in
+hoharlequin==1.23.1
+    # via -r requirements.in

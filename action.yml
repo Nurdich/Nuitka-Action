@@ -403,8 +403,9 @@ inputs:
       is used.
   jobs:
     description: |
-      Specify the allowed number of parallel C compiler jobs. Defaults to the
-      system CPU count.
+      Specify the allowed number of parallel C compiler jobs. Negative values
+      are system CPU minus the given value. Defaults to the full system CPU
+      count unless low memory mode is activated, then it defaults to 1.
   lto:
     description: |
       Use link time optimizations (MSVC, gcc, clang). Allowed values are
